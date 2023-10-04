@@ -1,0 +1,164 @@
+<!-- HTML file of Join Team Page, Author: Himanshu, Date: August 7 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join Team</title>
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../css/card.css">
+    <link rel="stylesheet" href="../css/join-team.css">
+    <link rel="stylesheet" href="../css/footer.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="left-navbar">
+            <ul>
+                <li><img src="../../images/logo.png" alt="logo"></li>
+            </ul>
+        </div>
+        <div class="right-navbar">
+            <ul>
+                <li><a href="../../../index.html">Home</a></li>
+                <li><a href="./enjoyments.html">Enjoyments</a></li>
+                <li><a href="./know-more.html">Play Game</a></li>
+                <li><a href="./game.html">Join Team</a></li>
+                <li><a href="./know-more.html">Know More</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="card-two opportunities">
+        <div class="card-two-image">
+            <img src="../../images/opportunities.jpeg" alt="Opportunities">
+        </div>
+        <div class="card-two-content">
+            <h1>Opportunities</h1>
+            <p>At Food Fusion, we are proud to provide numerous opportunities and exclusive benefits to our employees that set us apart from other companies. Some of these benefits include: -</p>
+            <p>We believe in providing our employees with the opportunity to voice their concerns and address any wrongdoings. Furthermore, we reward passionate and dedicated work with competitive salaries. Our commitment to enhancing the standard of living for our employees includes offering scholarships and many other benefits.</p>
+        </div>
+    </section>
+
+    <section class="development">
+        <div class="heading">
+            <h1>Developments</h1>
+        </div>
+        <div class="development-grid">
+            <div class="center">
+                <div class="grid">
+                    <div class="grid-image">
+                        <img src="../../images/tuition-reinbursement.jpeg" alt="">
+                    </div>
+                    <div class="grid-content">
+                        <h3>Tuition Reimbursement</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="center">
+                <div class="grid">
+                    <div class="grid-image">
+                        <img src="../../images/flexible-schedule.webp" alt="">
+                    </div>
+                    <div class="grid-content">
+                        <h3>Flexible Scheduling</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="center">
+                <div class="grid">
+                    <div class="grid-image">
+                        <img src="../../images/carrer-development.jpeg" alt="">
+                    </div>
+                    <div class="grid-content">
+                        <h3>Carrer Development</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="join-team-form">
+        <div class="form-container">
+            <h1>Join Our Restaurant Team</h1>
+            <form action="../php/addData.php" method="POST">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="itemNm" required>
+    
+                <label for="email">Email</label>
+                <input type="email" id="email" name="itemEmail" required>
+    
+                <label for="phone">Phone</label>
+                <input type="tel" id="phone" name="itemPhone" required>
+    
+                <label for="position">Position Applying For</label>
+                <select id="position" name="itemPosition" required>
+                    <option value="" disabled selected>Select a position</option>
+                    <option value="server">Server</option>
+                    <option value="cook">Cook</option>
+                    <option value="host">Host/Hostess</option>
+                    <option value="dishwasher">Dishwasher</option>
+                </select>
+    
+                <label for="experience">Experience (years)</label>
+                <input type="number" id="experience" name="itemExperience" min="0" max="50" required>
+    
+                <label for="availability">Availability</label>
+                <textarea id="availability" name="itemAvailability" rows="3" required></textarea>
+    
+                <label for="resume">Upload Resume</label>
+                <input type="file" id="resume" name="itemResume">
+    
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="address">
+            <h3 class="heading">Address</h3>
+            <div class="img-with-info">
+                <img src="../../images/maps.png" alt="Maps" id="location" class="address-images">
+                <p class="text">12 W 4th St, LA</p>
+            </div>
+            <div class="img-with-info">
+                <img src="../../images/phone.png" alt="Phone" id="phone" class="address-images">
+                <p class="text">+1 (777) 343-1992</p>
+            </div>
+            <div class="img-with-info">
+                <img src="../../images/mail.png" alt="E-mail" id="email" class="address-images">
+                <p class="text">food@fusion.com</p>
+            </div>
+        </div>
+        <div class="working-hours">
+            <h3 class="heading">Working Hours</h3>
+            <p class="text">Open Everyday from</p>
+            <p class="text">9:00 A.M TO 11:00 P.M</p>
+        </div>
+        <div class="links">
+            <h3 class="heading">Links</h3>
+            <p class="individual-link"><a href="../../../index.html">Home</a></p>
+            <p class="individual-link"><a href="./enjoyments.html">Enjoyments</a></p>
+            <p class="individual-link"><a href="./game.html">Play Game</a></p>
+            <p class="individual-link"><a href="./join-team.html">Join Team</a></p>
+            <p class="individual-link"><a href="./know-more.html">Know More</a></p>
+        </div>
+        <div class="social">
+            <h3 class="heading">Social Media</h3>
+            <div class="social-media">
+                <div class="social-media-img-container">
+                    <img src="../../images/facebook.png" alt="Facebook" id="facebook">
+                </div>
+                <div class="social-media-img-container">
+                    <img src="../../images/instagram.png" alt="Instagram" id="instagram">
+                </div>
+                <div class="social-media-img-container">
+                    <img src="../../images/twitter.png" alt="Twitter" id="twitter">
+                </div>
+            </div>
+            <div class="logo">
+                <img src="../../images/logo.png" alt="logo">
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

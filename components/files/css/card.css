@@ -1,0 +1,342 @@
+/* CSS file for the index.html Page, Author: Himanshu, Date: August 7 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Himanshu';
+    src: url('../../fonts/Bitter\ Rose\ DEMO.otf');
+}
+
+@font-face {
+    font-family: 'Nandini';
+    src: url(../../fonts/Broisther.otf);
+}
+
+@font-face {
+    font-family: 'Nidhi';
+    src: url('../../fonts/Just\ Another\ Hand.ttf');
+}
+
+.card-one, .card-two {
+    padding: 70px 120px 150px;
+    display: flex;
+    align-items: center;
+    /* background: #050505; */
+}
+.card-one .card-one-content, .card-two .card-two-content {
+    padding: 0 50px 0 0;
+    margin-right: 70px;
+}
+.card-one .card-one-content h1, .card-two .card-two-content h1 {
+    margin: 50px 0 40px 0;
+    font-family: 'Nandini', sans-serif;
+    color: #EAC784;
+    text-decoration: underline;
+    text-underline-offset: 7px;
+    font-size: 52px;
+    letter-spacing: 5px;
+    word-spacing: 15px;
+}
+.card-one .card-one-content p, .card-two .card-two-content p {
+    font-family: 'Himanshu', sans-serif;
+    color: #EAC784;
+    font-size: 30px;
+    margin-bottom: 25px;
+    word-spacing: 10px;
+}
+.card-one .card-one-content button {
+    color: #1d2026;
+    font-family: 'Nidhi', sans-serif;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 30px;
+    font-size: 22px;
+    font-weight: 700;
+    cursor: pointer;
+    background: linear-gradient(to bottom left, #ffb84d, #ff9933, #ff6600, #ff3300);
+}
+.card-one .card-one-image img, .card-two .card-two-image img {
+    width: 550px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 50px 20px 50px 20px;
+}
+
+
+.card-two .card-two-content {
+    margin: 0 0 0 50px;
+}
+.card-two .card-two-image img {
+    border-radius: 50px 20px 20px 50px;
+}
+
+
+.ambiance {
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)), url(../../images/bg-ambiance.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.food {
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)), url(../../images/chef-working.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.technology {
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)), url(../../images/bg-friendly-env.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.environment {
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)), url(../../images/bg-tech.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.kids {
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)), url(../../images/bg-kids-fun.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.opportunities {
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)), url(../../images/bg-opportunities.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.originated {
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)), url(../../images/plating.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.locations {
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)), url(../../images/bg-places-where-we-at.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/* Media Queries */
+@media screen and (max-width: 1440px) {
+    .card-one, .card-two {
+        padding: 100px 100px 140px 165px;
+    }
+    .card-one .card-one-content, .card-two .card-two-content {
+        padding: 0 25px;
+        margin-right: 40px;
+    }
+    .card-one .card-one-content h1, .card-two .card-two-content h1 {
+        margin: 30px 0 20px 0;
+        text-underline-offset: 5px;
+        font-size: 42px;
+    }
+    .card-one .card-one-content p, .card-two .card-two-content p {
+        font-size: 32px;
+        margin-bottom: 15px;
+    }
+    .card-one .card-one-content button {
+        padding: 5px 20px;
+        font-size: 18px;
+        font-weight: 700;
+    }
+    .card-one .card-one-image img, .card-two .card-two-image img {
+        width: 500px;
+        height: 375px;
+    }
+}
+
+@media screen and (max-width: 1275px) {
+    .card-one, .card-two {
+        padding: 100px 100px 150px 145px;
+    }
+    .card-one .card-one-content, .card-two .card-two-content {
+        padding: 0 5px;
+        margin-right: 30px;
+    }
+    .card-one .card-one-content h1, .card-two .card-two-content h1 {
+        font-size: 36px;
+    }
+    .card-one .card-one-content p, .card-two .card-two-content p {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1198px) {
+    .card-one, .card-two {
+        padding: 60px 100px 80px 135px;
+    }
+    .card-one .card-one-content, .card-two .card-two-content {
+        margin-right: 0;
+    }
+    .card-one .card-one-content h1, .card-two .card-two-content h1 {
+        font-size: 36px;
+    }
+    .card-one .card-one-image, .card-two .card-two-image {
+        margin-top: 30px;
+        display: flex;
+        justify-content: center;
+    }
+    .card-one .card-one-image img, .card-two .card-two-image img {
+        width: 450px;
+        height: 325px;
+    }
+}
+
+@media screen and (max-width: 975px) {
+    .card-one, .card-two {
+        padding: 20px 100px 20px 135px;
+        display: block;
+    }
+    .card-one .card-one-content, .card-two .card-two-content {
+        margin: 0;
+    }
+    .card-one .card-one-content p, .card-two .card-two-content p {
+        margin-bottom: 15px;
+        font-size: 20px;
+    }
+    .card-one .card-one-content h1, .card-two .card-two-content h1 {
+        font-size: 24px;
+    }
+    .card-one .card-one-content button {
+        font-size: 15px;
+    }
+    .card-one .card-one-image, .card-two .card-two-image {
+        margin-top: 30px;
+        display: flex;
+        justify-content: center;
+    }
+    .card-one .card-one-image img, .card-two .card-two-image img {
+        width: 450px;
+        height: 250px;
+    }
+}
+
+@media screen and (max-width: 835px) {
+    .card-one .card-one-content p, .card-two .card-two-content p {
+        margin-bottom: 10px;
+        font-size: 17px;
+    }
+    .card-one .card-one-content h1, .card-two .card-two-content h1 {
+        font-size: 20px;
+    }
+    .card-two .card-two-content {
+        margin: 0;
+    }
+    .card-one .card-one-image, .card-two .card-two-image {
+        margin-top: 20px;
+    }
+    .card-one .card-one-content button {
+        font-size: 12px;
+    }
+    .card-one .card-one-image img, .card-two .card-two-image img {
+        width: 400px;
+        height: 225px;
+    }
+}
+
+@media screen and (max-width: 735px) {
+    .card-one, .card-two {
+        padding: 20px 65px 50px 100px;
+    }
+    .card-one .card-one-content p, .card-two .card-two-content p {
+        font-size: 16px;
+    }
+    .card-one .card-one-content h1, .card-two .card-two-content h1 {
+        font-size: 18px;
+        letter-spacing: 3px;
+        word-spacing: 5px;
+    }
+    .card-one .card-one-content button {
+        font-size: 10px;
+    }
+    .card-one .card-one-image img, .card-two .card-two-image img {
+        width: 325px;
+        height: 200px;
+    }
+}
+
+@media screen and (max-width: 625px) {
+    .card-one, .card-two {
+        padding: 30px 75px 50px 75px;
+    }
+    .card-one .card-one-content p, .card-two .card-two-content p {
+        font-size: 20px;
+        margin: 20px 0;
+    }
+    .card-one .card-one-content h1, .card-two .card-two-content h1 {
+        font-size: 28px;
+        letter-spacing: 2px;
+    }
+    .card-one .card-one-content button {
+        font-size: 16px;
+        padding: 5px 20px;
+    }
+    .card-one .card-one-image img, .card-two .card-two-image img {
+        width: 350px;
+        height: 225px;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .card-one, .card-two {
+        padding: 30px 50px 50px 50px;
+    }
+    .card-one .card-one-content p, .card-two .card-two-content p {
+        font-size: 22px;
+        margin: 20px 0;
+    }
+    .card-one .card-one-content h1, .card-two .card-two-content h1 {
+        font-size: 32px;
+        letter-spacing: 2px;
+    }
+    .card-one .card-one-content button {
+        font-size: 18px;
+        padding: 5px 20px;
+    }
+    .card-one .card-one-image img, .card-two .card-two-image img {
+        width: 325px;
+        height: 275px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .card-one, .card-two {
+        padding: 30px 50px 50px 50px;
+    }
+    .card-one .card-one-content p, .card-two .card-two-content p {
+        font-size: 22px;
+    }
+    .card-one .card-one-content h1, .card-two .card-two-content h1 {
+        font-size: 28px;
+        margin-top: 10px;
+    }
+    .card-one .card-one-image img, .card-two .card-two-image img {
+        width: 250px;
+        height: 250px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .card-one, .card-two {
+        padding: 30px 35px 50px 35px;
+    }
+    .card-one .card-one-content p, .card-two .card-two-content p {
+        font-size: 20px;
+    }
+    .card-one .card-one-content h1, .card-two .card-two-content h1 {
+        font-size: 26px;
+        margin-top: 10px;
+    }
+    .card-one .card-one-image img, .card-two .card-two-image img {
+        width: 225px;
+        height: 225px;
+    }
+}

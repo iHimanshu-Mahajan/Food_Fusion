@@ -1,0 +1,218 @@
+/* CSS file for the index.html Page, Author: Himanshu, Date: August 7 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Himanshu';
+    src: url('../../fonts/Bitter\ Rose\ DEMO.otf');
+}
+
+@font-face {
+    font-family: 'Nandini';
+    src: url(../../fonts/Broisther.otf);
+}
+
+@font-face {
+    font-family: 'Nidhi';
+    src: url('../../fonts/Just\ Another\ Hand.ttf');
+}
+
+.reviews-section {
+    padding: 70px 120px 150px;
+    background-color: #010b0f;
+}
+.reviews-section .headings {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.heading {
+    margin-bottom: 20px;
+}
+.heading h2 {
+    font-family: 'Nidhi', sans-serif;
+    text-transform: uppercase;
+    font-size: 23px;
+}
+.heading h1 {
+    font-family: 'Nandini', sans-serif;
+    font-size: 42px;
+    margin-bottom: 40px;
+}
+.reviews {
+    display: flex;
+}
+.reviews .review {
+    padding: 30px;
+    margin: 0 25px;
+    background-color: #03171e;
+}
+.reviews .review .icon {
+    display: flex;
+    justify-content: right;
+}
+.reviews .review p {
+    margin-bottom: 30px;
+    font-family: 'Himanshu';
+    font-size: 24px;
+    margin-right: 70px;
+    color: #efefef;
+}
+.reviews .review h4 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    font-family: 'Nandini';
+}
+.person-image {
+    display: flex;
+    justify-content: right;
+}
+.person-image img {
+    position: relative;
+    bottom: 30px;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50px;
+}
+
+/* Media Queries */
+@media screen and (max-width: 975px) {
+    .reviews-section {
+        padding: 50px 100px 50px 135px;
+    }
+    .heading {
+        margin-bottom: 10px;
+    }
+    .heading h2 {
+        font-size: 19px;
+    }
+    .heading h1 {
+        font-size: 32px;
+        margin-bottom: 20px;
+    }
+    .reviews {
+        flex-direction: column;
+        align-items: center;
+    }
+    .reviews .review {
+        width: 500px;
+        margin: 20px 0;
+    }
+    .reviews .review p {
+        margin-bottom: 10px;
+        font-size: 19px;
+        margin-right: 120px;
+    }
+    .reviews .review h4 {
+        font-size: 17px;
+        margin-bottom: 10px;
+    }
+    .person-image img {
+        width: 70px;
+        height: 70px;
+    }
+}
+
+@media screen and (max-width: 835px) {
+    .heading {
+        margin-bottom: 7px;
+    }
+    .heading h2 {
+        font-size: 15px;
+    }
+    .heading h1 {
+        font-size: 26px;
+        margin-bottom: 0;
+    }
+    .reviews .review {
+        width: 450px;
+    }
+    .reviews .review .icon img {
+        width: 35px;
+    }
+    .reviews .review p {
+        font-size: 16px;
+    }
+    .reviews .review h4 {
+        font-size: 13px;
+    }
+    .person-image img {
+        width: 60px;
+        height: 60px;
+    }
+}
+
+@media screen and (max-width: 735px) {
+    .heading {
+        margin-bottom: 5px;
+    }
+    .heading h2 {
+        font-size: 13px;
+    }
+    .heading h1 {
+        font-size: 22px;
+        margin-bottom: 0;
+    }
+    .reviews .review {
+        width: 400px;
+        padding: 20px 30px;
+    }
+    .reviews .review .icon img {
+        width: 30px;
+    }
+    .reviews .review p {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 625px) {
+    .heading {
+        margin-bottom: 2px;
+    }
+    .heading h2 {
+        font-size: 20px;
+    }
+    .heading h1 {
+        font-size: 28px;
+        margin-bottom: 0;
+    }
+    .reviews .review {
+        width: 350px;
+    }
+    .reviews .review .icon img {
+        width: 25px;
+    }
+    .reviews .review p {
+        font-size: 16px;
+        margin-right: 50px;
+    }
+    .reviews .review h4 {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .reviews .review p {
+        font-size: 20px;
+    }
+    .reviews .review h4 {
+        font-size: 22px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .reviews .review {
+        width: 300px;
+    }
+    .reviews .review p {
+        font-size: 20px;
+        margin-right: 50px;
+    }
+    .reviews .review h4 {
+        font-size: 22px;
+    }
+}

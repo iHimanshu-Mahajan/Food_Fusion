@@ -1,0 +1,225 @@
+/* CSS file for the join-team.html Page, Author: Himanshu, Date: August 7 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Himanshu';
+    src: url('../../fonts/Bitter\ Rose\ DEMO.otf');
+}
+
+@font-face {
+    font-family: 'Nandini';
+    src: url(../../fonts/Broisther.otf);
+}
+
+@font-face {
+    font-family: 'Nidhi';
+    src: url('../../fonts/Just\ Another\ Hand.ttf');
+}
+
+.development {
+    padding: 70px 120px 150px;
+    background-color: #050505;
+}
+.development .heading {
+    display: flex;
+    justify-content: center;
+}
+.development .heading h1 {
+    font-family: 'Nandini';
+    font-size: 46px;
+}
+.development-grid {
+    margin-top: 60px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.development-grid img {
+    border-radius: 50px;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+.grid {
+    background-color: #03171e;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+    margin: 0 30px;
+}
+.grid .grid-content {
+    margin-top: 30px;
+}
+.grid .grid-content h3 {
+    font-family: 'Nidhi';
+    font-size: 20px;
+}
+
+.join-team-form {
+    padding: 70px 120px;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)), url('../../images/bg-form.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.form-container {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Nandini', sans-serif;
+    color: #EAC784;
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+    font-size: 18px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea,
+select {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s ease-in-out;
+}
+
+input[type="file"] {
+    margin-top: 5px;
+}
+
+input[type="submit"] {
+    background-color: #FF6600;
+    color: white;
+    padding: 12px 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ease-in-out;
+}
+
+input[type="submit"]:hover {
+    background-color: #FF3300;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.form-container {
+    border: 2px solid #EAC784;
+}
+
+label::after {
+    content: ":";
+}
+
+
+/* Media Queries */
+@media screen and (max-width: 975px) {
+    .development-grid {
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 50px;
+    }
+    .join-team-form {
+        padding: 20px 100px 40px 100px;
+    }
+}
+@media screen and (max-width: 835px) {
+    .development .heading h1 {
+        font-size: 30px;
+    }
+}
+@media screen and (max-width: 735px) {
+    .development-grid {
+        grid-template-columns: 1fr;
+        grid-gap: 50px;
+        margin: 10px 0;
+    }
+    .grid {
+        width: 250px;
+        padding: 30px;
+        margin: 0 30px;
+    }
+    .center {
+        display: flex;
+        justify-content: center;
+    }
+}
+@media screen and (max-width: 625px) {
+    .join-team-form {
+        padding: 20px;
+    }
+
+    .form-container {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    input[type="submit"] {
+        font-size: 16px;
+        padding: 10px 15px;
+    }
+}
+@media screen and (max-width: 575px) {
+    .grid {
+        margin: 0px;
+    }
+}
+@media screen and (max-width: 480px) {
+    .grid {
+        width: 200px;
+        padding: 30px;
+    }
+}
+@media screen and (max-width: 425px) {
+    .development-grid {
+        display: block;
+    }
+    .development-grid img {
+        border-radius: 50px;
+        width: 75px;
+        height: 75px;
+        object-fit: cover;
+    }
+    .grid {
+        width: 170px;
+        margin: 0;
+    }
+    .grid .grid-content {
+        margin-top: 20px;
+    }
+    .grid .grid-content h3 {
+        font-size: 17px;
+    }
+}

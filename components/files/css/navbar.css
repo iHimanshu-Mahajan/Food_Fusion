@@ -1,0 +1,225 @@
+/* CSS file for the Navbar Section, Author: Himanshu, Date: August 7 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Himanshu';
+    src: url('../../fonts/Bitter\ Rose\ DEMO.otf');
+}
+
+.navbar {
+    padding: 20px 100px 20px 150px;
+    background-color: #1d2026;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .left-navbar ul {
+    list-style-type: none;
+}
+
+.navbar .left-navbar img {
+    height: 75px;
+}
+
+.navbar .right-navbar ul {
+    list-style-type: none;
+    display: flex;
+}
+
+.navbar .right-navbar ul li {
+    margin: 0 12px;
+}
+
+.navbar .right-navbar a {
+    position: relative;
+    font-family: 'Himanshu', sans-serif;
+    background: linear-gradient(to bottom left, #ffb84d, #ff9933, #ff6600, #ff3300);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-size: 38px;
+    text-decoration: none;
+    padding: 0 7px;
+}
+
+.navbar .right-navbar a::after {
+    content: '';
+    position: absolute;
+    background-color: #ff6600;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -5px;
+    transition: 0.3s;
+}
+
+.navbar .right-navbar a:hover:after {
+    width: 100%;
+}
+
+/* Media Queries */
+@media screen and (max-width: 1440px) {
+    .navbar .right-navbar a {
+        font-size: 36px;
+    }
+    .navbar {
+        padding: 20px 100px 20px 165px;
+    }
+    .navbar .right-navbar ul li {
+        margin: 0 15px;
+    }
+    .navbar .left-navbar img {
+        height: 55px;
+    }
+}
+
+@media screen and (max-width: 1275px) {
+    .navbar {
+        padding: 20px 100px 20px 145px;
+    }
+    .navbar .right-navbar a {
+        font-size: 28px;
+    }
+    .navbar .right-navbar ul li {
+        margin: 0 10px;
+    }
+    .navbar .left-navbar img {
+        height: 45px;
+    }
+}
+
+@media screen and (max-width: 1198px) {
+    .navbar {
+        padding: 20px 100px 20px 135px;
+    }
+    .navbar .right-navbar a {
+        font-size: 25px;
+    }
+    .navbar .right-navbar ul li {
+        margin: 0 5px;
+    }
+    .navbar .left-navbar img {
+        height: 40px;
+    }
+}
+
+@media screen and (max-width: 975px) {
+    .navbar .right-navbar a {
+        font-size: 23px;
+    }
+}
+
+@media screen and (max-width: 835px) {
+    .navbar .right-navbar a {
+        font-size: 21px;
+    }
+    .navbar .left-navbar img {
+        height: 35px;
+    }
+    .navbar .right-navbar a::after {
+        height: 2px;
+    }
+}
+
+@media screen and (max-width: 735px) {
+    .navbar {
+        padding: 20px 65px 20px 100px;
+    }
+    .navbar .right-navbar a {
+        font-size: 18px;
+    }
+    .navbar .left-navbar img {
+        height: 30px;
+    }
+}
+
+@media screen and (max-width: 625px) {
+    .navbar {
+        padding: 30px 75px;
+    }
+    .navbar .right-navbar a {
+        font-size: 22px;
+    }
+    .navbar .right-navbar ul li {
+        margin: 0 2px;
+    }
+    .navbar .left-navbar img {
+        height: 40px;
+    }
+    .navbar .right-navbar a:hover:after {
+        width: 85%;
+    }
+    .navbar .right-navbar a::after {
+        height: 1.5px;
+        left: 3px;
+        bottom: -3px;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .navbar {
+        padding: 30px 50px;
+    }
+    .navbar .right-navbar a {
+        font-size: 22px;
+    }
+    .navbar .right-navbar ul li {
+        margin: 0 2px;
+    }
+    .navbar .left-navbar img {
+        height: 40px;
+    }
+    .navbar .right-navbar a:hover:after {
+        width: 85%;
+    }
+    .navbar .right-navbar a::after {
+        height: 1.5px;
+        left: 3px;
+        bottom: -3px;
+    }
+}
+
+@media screen and (max-width: 525px) {
+    .navbar .right-navbar a {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .navbar {
+        padding: 20px 50px;
+    }
+    .navbar .right-navbar a {
+        font-size: 18px;
+    }
+    .navbar .right-navbar ul li {
+        margin: 0;
+    }
+    .navbar .left-navbar img {
+        height: 35px;
+    }
+    .navbar .right-navbar a:hover:after {
+        width: 80%;
+    }
+    .navbar .right-navbar a::after {
+        height: 1.1px;
+        left: 4px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .navbar {
+        padding: 20px 35px;
+    }
+    .navbar .right-navbar a {
+        font-size: 16px;
+    }
+    .navbar .left-navbar img {
+        height: 30px;
+    }
+}
